@@ -4,106 +4,9 @@
 
 ## Objetivo
 
-## Convenção de nomenclatura
-> Padrão de nomeação que deve ser seguido em todas as etapas de desenvolvimento.
-
-### Linguagem
-- A ser decidido
-
-### Arquivos e pastas
-- kebab-case.
-- Com exceção dos arquivos na pasta .github que devem ser todos em maiúsculo todas as pastas e arquivos devem permanecer neste padrão.
-- Exemplo:
-
-  ```
-    ├── .github/
-    │   ├── CODEOWNERS 
-    │   └── PULL_REQUEST_TEMPLATE.md 
-    └──── src/ 
-           ├──assets
-           └──pages
-                └── page-one.html 
-  ```
-
-### Variáveis e funções
-- camelCase.
-- Nomes de variáveis e funções no front e back end devem seguir este padrão.
-- Exemplos:
-
-  ```java
-  <!-- Java -->
-  private String userName;
-
-  public String getName() {
-    return userName;
-  }
-  ```
-
-  ```jsx
-  <!-- JavaScript -->
-    let accessIcon = document.getElementsByClassName("accessibility-icon")[0]
-    let accessOpen = document.getElementsByClassName("accessibility-open")[0]
-
-    function closeMenu() {
-    accessOpen.style.display = "";
-    accessIcon.style.display = "flex";
-    }
-  ```
-
-### Componentes do react
-- PascalCase.
-- Tanto as pastas quanto o nome da função do componente devem seguir este padrão para serem diferenciados de funções normais.
-- Exemplos:
-
-  ```
-  <!-- Estrutura das pastas -->
-    └─── src/
-        └── components
-            └── Header <- Pasta com H maiúsculo
-                ├── index.jsx
-                └── style.css 
-  ```
-
-  ```jsx
-  <!-- Dentro de index.jsx -->
-    export default function Header() {
-
-    }
-  ```
-
-### Endpoints
-- kebab-case.
-- Endpoints não devem iniciar nem finalizar com " / " e nomes compostos devem ser separados seguindo este padrão.
-- Exemplo:
-
-  ```java
-    @RestController
-    @RequestMapping("user")
-    public class UserController {
-
-        @PostMapping("login-admin")
-	    public ResponseEntity<?> login(@RequestBody UserRequestDTO user) {
-		
-		    return ResponseEntity.ok(userService.login(user));
-    	} 
-    }
-  ```
-
-## Diagrama do banco de dados
-> Importante que sejam seguidos os nomes nesse diagrama para garantir a consistência em todos os grupos. 
-
-### TODO
-
-## Tecnologias utilizadas
-![alt text](../assets/icons/html-logo.svg)
-![alt text](../assets/icons/css-logo.svg)
-![alt text](../assets/icons/react-logo.svg)
-
-![alt text](../assets/icons/my-sql-logo.svg)
-![alt text](../assets/icons/spring-logo.svg)
-
 ## Práticas Git
-É aconselhado utilizar o padrão **Conventional Commits**. 
+É aconselhado utilizar o padrão **Conventional Commits**, utilizandos os tipos recomendados abaixo e falando de forma **imperativa**(ex: add, make no lugar de added, made).
+
 ### Tipos e descrições principais
 
 - `feat`- Commits do tipo feat indicam que seu trecho de código está incluindo um **novo recurso**.
@@ -132,16 +35,15 @@ Sendo no front ou back end **Não se deve fazer alterações diretamente nas bra
 
 ## Como rodar o projeto
 
-### Front-end
-Clonando este repositório com o link: (url aqui) basta entrar na pasta utilizando  sua IDE de preferência basta iniciar o projeto no terminal com o comando `` npm start `` para rodar localmente.
-
-### Back-end
-Clonando este repositório com o link: (url aqui) basta entrar na pasta utilizando Intellij, para que a dependência `` lombok `` funcione corretamente, é necessário verificar se seu banco de dados está configurado corretamente em **application properties** e então rodar o arquivo `` HelpPetApplication.java ``.
-
 ## Como começar a contribuir
-> O Tech Lead do seu grupo deve fazer forks nos repositórios front e back end e nomeá-los com o prefixo do seu grupo.
-- Exemplo: 
- ![alt text](../assets/images/example.png)
+
+## Tecnologias utilizadas
+![alt text](../assets/icons/html-logo.svg)
+![alt text](../assets/icons/css-logo.svg)
+![alt text](../assets/icons/react-logo.svg)
+
+![alt text](../assets/icons/my-sql-logo.svg)
+![alt text](../assets/icons/spring-logo.svg)
 
 ## Licença
 Este projeto é de uso acadêmico e não possui fins comerciais.
