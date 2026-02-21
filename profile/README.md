@@ -4,8 +4,8 @@
 
 ## Objetivo
 
-## Práticas Git
-É aconselhado utilizar o padrão **Conventional Commits**, utilizandos os tipos recomendados abaixo e falando de forma **imperativa**(ex: add, make no lugar de added, made).
+## Práticas git e github
+É aconselhado utilizar o padrão **Conventional Commits**, que consiste dos tipos recomendados abaixo e falar de forma **imperativa** (ex: add, make no lugar de added, made).
 
 ### Tipos e descrições principais
 
@@ -21,17 +21,27 @@
 
 - `chore` - Commits do tipo chore indicam **atualizações de tarefas** de build, configurações de administrador, pacotes... como por exemplo adicionar um pacote no gitignore. (Não inclui alterações em código)
 
+### Pull requests
+Siga os mesmo padrões mencionados acima, apenas com o tipo de pull request em letra maiúscula e entre colchetes.
+
+ - Exemplos:
+    - [FEAT] Add CRUD methods to user
+    - [HOTFIX] issue #13 <- hotfix é um tipo específico para pull requests, sendo para problemas no código que precisam de conserto imediato.
+
 ## Estruturas das branchs
 A princípio serão duas branchs:
-- **main** - Branch que contem código estável e pronto para merge ao repositório forkado.
-- **qa/test** - Branch que contem onde ocorrerem testes para garantir o funcionamento correto antes de fazer merge na main.
+- **main** - Branch que contém código estável e pronto para merge ao repositório forkado.
+- **qa/test** - Branch onde ocorrerem testes para garantir o funcionamento correto antes de fazer merge na main.
 
 
 Tendo essas duas branchs também haverá branchs para features, baseadas na main para merges na branch qa para testes. Exemplos:
 - feat/header
 - fix/user-login-endpoint
   
-Sendo no front ou back end **Não se deve fazer alterações diretamente nas branchs main e qa**, para isso se deve criar outra branch com base no que será alterado como indicado acima.
+Sendo no front ou back end, **não se deve fazer alterações diretamente na branch main**, para isso se deve criar outra branch com base no que será alterado como indicado acima.
+
+## Equipes
+> Equipes são uma forma de organizar repositórios de uma forma que cada grupo terá visibilidade e controle total sobre seus respectivos repositórios e não terá visibilidade dos repositórios de outras equipes.
 
 ## Como rodar o projeto
 
@@ -46,4 +56,4 @@ Sendo no front ou back end **Não se deve fazer alterações diretamente nas bra
 ![alt text](../assets/icons/spring-logo.svg)
 
 ## Licença
-Este projeto é de uso acadêmico e não possui fins comerciais.
+Este projeto é de uso acadêmico e não possui fins comerciais.
