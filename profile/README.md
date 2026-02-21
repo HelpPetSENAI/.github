@@ -1,4 +1,4 @@
-# Help Pet
+# Help Pet - Onboarding
 
 ## Sobre o projeto
 
@@ -56,4 +56,5 @@ Sendo no front ou back end, **não se deve fazer alterações diretamente na bra
 ![alt text](../assets/icons/spring-logo.svg)
 
 ## Licença
-Este projeto é de uso acadêmico e não possui fins comerciais.
+
+Este projeto é de uso acadêmico e não possui fins comerciais.
