@@ -25,10 +25,10 @@
 Siga os mesmo padrões mencionados acima, apenas com o tipo de pull request em letra maiúscula e entre colchetes.
 
  - Exemplos:
-    - [FEAT] Add CRUD methods to user
+    - [FEAT] Add CRUD methods to user.
     - [HOTFIX] issue #13 <- hotfix é um tipo específico para pull requests, sendo para problemas no código que precisam de conserto imediato.
 
-## Estruturas das branchs
+## Estrutura das branchs
 A princípio serão duas branchs:
 - **main** - Branch que contém código estável e pronto para merge ao repositório forkado.
 - **qa/test** - Branch onde ocorrerem testes para garantir o funcionamento correto antes de fazer merge na main.
@@ -39,6 +39,9 @@ Tendo essas duas branchs também haverá branchs para features, baseadas na main
 - fix/user-login-endpoint
   
 Sendo no front ou back end, **não se deve fazer alterações diretamente na branch main**, para isso se deve criar outra branch com base no que será alterado como indicado acima.
+
+## Workflow (fluxo de trabalho)
+Ao entrar nos repositórios da sua equipe você deve clonar o repositório na sua máquina e criar uma branch baseado no que você pretende contribuir como nos exemplos na seção acima. Ao finalizar, por exemplo, uma feature nesta branch faça um merge na branch **qa/test** onde serão feitos testes para garantir que tudo esteja funcionando corretamente. Após serem feitos os testes o seu **tech lead** deverá fazer o merge na branch **main** através de uma pull request.
 
 ## Equipes
 > Equipes são uma forma de organizar repositórios de uma forma que cada grupo terá visibilidade e controle total sobre seus respectivos repositórios e não terá visibilidade dos repositórios de outras equipes.
@@ -56,5 +59,4 @@ Sendo no front ou back end, **não se deve fazer alterações diretamente na bra
 ![alt text](../assets/icons/spring-logo.svg)
 
 ## Licença
-
 Este projeto é de uso acadêmico e não possui fins comerciais.
