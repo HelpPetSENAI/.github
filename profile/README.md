@@ -51,12 +51,18 @@ Ao entrar nos repositórios da sua equipe você deve clonar o repositório na su
 ## Como começar a contribuir
 
 ## Tecnologias utilizadas
+
+### Front-end
 ![alt text](../assets/icons/html-logo.svg)
 ![alt text](../assets/icons/css-logo.svg)
+![alt text](../assets/icons/javascript-logo.svg)
 ![alt text](../assets/icons/react-logo.svg)
+![alt text](../assets/icons/vite-logo.svg)
 
-![alt text](../assets/icons/my-sql-logo.svg)
+### Back-end
+![alt text](../assets/icons/java-logo.svg)
 ![alt text](../assets/icons/spring-logo.svg)
+![alt text](../assets/icons/my-sql-logo.svg)
 
 ## Licença
 Este projeto é de uso acadêmico e não possui fins comerciais.
