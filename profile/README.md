@@ -13,7 +13,7 @@
 
 - `fix` - Commits do tipo fix indicam que seu trecho de código commitado está **solucionando um problema** (bug fix).
 
-- `docs` - Commits do tipo docs indicam que houveram **mudanças na documentação**, como por exemplo no Readme do seu repositório. (Não inclui alterações em código).
+- `docs` - Commits do tipo docs indicam que houveram **mudanças na documentação**, como por exemplo no Readme do seu repositório, (Não inclui alterações em código).
 
 - `style` - Commits do tipo style indicam que houveram alterações referentes a **formatações de código**, indentação,  (Não inclui alterações em código).
 
@@ -22,7 +22,7 @@
 - `chore` - Commits do tipo chore indicam **atualizações de tarefas** de build, configurações de administrador, pacotes... como por exemplo adicionar um pacote no gitignore. (Não inclui alterações em código)
 
 ### Pull requests
-Siga os mesmo padrões mencionados acima, apenas com o tipo de pull request em letra maiúscula e entre colchetes.
+Siga os mesmos padrões mencionados acima, apenas com o tipo de pull request em letra maiúscula e entre colchetes.
 
  - Exemplos:
     - [FEAT] Add CRUD methods to user.
@@ -31,7 +31,7 @@ Siga os mesmo padrões mencionados acima, apenas com o tipo de pull request em l
 ## Estrutura das branchs
 A princípio serão duas branchs:
 - **main** - Branch que contém código estável e pronto para merge ao repositório forkado.
-- **qa/test** - Branch onde ocorrerem testes para garantir o funcionamento correto antes de fazer merge na main.
+- **qa/test** - Branch onde ocorrerem testes para garantir o funcionamento correto do código antes de ser feito o merge na main.
 
 
 Tendo essas duas branchs também haverá branchs para features, baseadas na main para merges na branch qa para testes. Exemplos:
@@ -48,7 +48,31 @@ Ao entrar nos repositórios da sua equipe você deve clonar o repositório na su
 
 ## Como rodar o projeto
 
+### Front-end
+1. Clone o repositório. 
+2. Abra o terminal dentro da pasta.
+3. Instale as dependências do projeto com o comando `` npm install ``.
+4. Inicie o projeto com o comando `` npm run dev `` para rodar localmente.
+
+### Back-end
+1. Clone este repositório.
+2. Entre na pasta utilizando Intellij para que a dependência **lombok** funcione corretamente.
+3. Verifique que o banco de dados está configurando corretamente em `` application properties ``.
+4. Rode o arquivo `` HelpPetApplication.java ``.
+
+### Como conectar
+É possível testar a resposta do endpoint no front utilizando fetch.
+
+Exemplo:
+```jsx
+fetch("http://localhost:3000/api/users")
+  .then(res => res.json())
+  .then(data => console.log(data));
+```
+> (É aconselhado testar os endpoints no postman antes de fazer esta integração.)
+
 ## Como começar a contribuir
+> Leia a documentação `` CONTRIBUTING.md `` dos repositórios front e back do seu grupo para saber exatamente como contribuir ao projeto.
 
 ## Tecnologias utilizadas
 
