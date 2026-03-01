@@ -40,11 +40,18 @@ Tendo essas duas branchs também haverá branchs para features, baseadas na main
   
 Sendo no front ou back end, **não se deve fazer alterações diretamente na branch main**, para isso se deve criar outra branch com base no que será alterado como indicado acima.
 
-## Workflow (fluxo de trabalho)
-Ao entrar nos repositórios da sua equipe você deve clonar o repositório na sua máquina e criar uma branch baseado no que você pretende contribuir como nos exemplos na seção acima. Ao finalizar, por exemplo, uma feature nesta branch faça um merge na branch **qa/test** onde serão feitos testes para garantir que tudo esteja funcionando corretamente. Após serem feitos os testes o seu **tech lead** deverá fazer o merge na branch **main** através de uma pull request.
+## Como começar a contribuir
+> Siga os passos abaixo e leia a seção como contribuir da documentação dos repositórios front e back do seu grupo para saber exatamente como contribuir ao projeto.
 
-## Equipes
-> Equipes são uma forma de organizar repositórios de uma forma que cada grupo terá visibilidade e controle total sobre seus respectivos repositórios e não terá visibilidade dos repositórios de outras equipes.
+### Equipes
+Equipes são uma forma de organizar repositórios de uma forma que cada grupo terá visibilidade de todos os repositórios mas apenas controle total dos seus próprios.
+
+### Workflow (fluxo de trabalho)
+1. Ao entrar nos repositórios da sua equipe você deve clonar o repositório na sua máquina.
+2. Criar uma branch baseado no que você pretende contribuir como nos exemplos na seção acima.
+3. Ao finalizar, por exemplo, uma feature nesta branch faça um merge na branch **qa/test** onde serão feitos testes.
+4. O seu **tech lead** deverá realizar o merge na branch **main** através de uma pull request.
+
 
 ## Como rodar o projeto
 
@@ -69,10 +76,8 @@ fetch("http://localhost:3000/api/users")
   .then(res => res.json())
   .then(data => console.log(data));
 ```
-> (É aconselhado testar os endpoints no postman antes de fazer esta integração.)
+**É aconselhado testar os endpoints no postman antes de fazer esta integração.**
 
-## Como começar a contribuir
-> Leia a documentação `` CONTRIBUTING.md `` dos repositórios front e back do seu grupo para saber exatamente como contribuir ao projeto.
 
 ## Tecnologias utilizadas
 
@@ -86,6 +91,8 @@ fetch("http://localhost:3000/api/users")
 ### Back-end
 ![alt text](../assets/icons/java-logo.svg)
 ![alt text](../assets/icons/spring-logo.svg)
+
+### Banco de dados
 ![alt text](../assets/icons/my-sql-logo.svg)
 
 ## Licença
